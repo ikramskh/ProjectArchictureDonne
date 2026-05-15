@@ -1,0 +1,321 @@
+{
+  "title": "NewsCollector - Enterprise Monitoring",
+  "refresh": "5s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "timezone": "browser",
+  "panels": [
+
+    {
+      "title": "NEWS PIPELINE MONITORING",
+      "type": "text",
+      "gridPos": { "h": 3, "w": 24, "x": 0, "y": 0 },
+      "options": {
+        "mode": "markdown",
+        "content": "# News Medallion Architecture Monitoring\n### Kafka • Spark • Airflow • MinIO • PostgreSQL • Grafana"
+      }
+    },
+
+    {
+      "title": "SERVICES ACTIFS",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 6, "x": 0, "y": 3 },
+      "targets": [
+        {
+          "expr": "sum(up)",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "textMode": "value"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red", "value": null },
+              { "color": "green", "value": 1 }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "title": "UTILISATION CPU",
+      "type": "gauge",
+      "gridPos": { "h": 5, "w": 6, "x": 6, "y": 3 },
+      "targets": [
+        {
+          "expr": "sum(rate(process_cpu_seconds_total[1m])) * 100",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "percent",
+          "min": 0,
+          "max": 100,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "orange", "value": 70 },
+              { "color": "red", "value": 90 }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "title": "UTILISATION RAM",
+      "type": "bargauge",
+      "gridPos": { "h": 5, "w": 6, "x": 12, "y": 3 },
+      "targets": [
+        {
+          "expr": "sum(process_resident_memory_bytes) / 1073741824",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "decgbytes",
+          "min": 0,
+          "max": 16,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "green", "value": null },
+              { "color": "orange", "value": 10 },
+              { "color": "red", "value": 14 }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "title": "DÉBIT INGESTION ARTICLES",
+      "type": "timeseries",
+      "gridPos": { "h": 5, "w": 6, "x": 18, "y": 3 },
+      "targets": [
+        {
+          "expr": "rate(news_articles_total[1m])",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single"
+        }
+      }
+    },
+
+    {
+      "title": "SPARK & AIRFLOW",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 8 }
+    },
+
+    {
+      "title": "Workers Spark Actifs",
+      "type": "gauge",
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 9 },
+      "targets": [
+        {
+          "expr": "sum(up{job='spark-worker'})",
+          "refId": "A"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "min": 0,
+          "max": 5,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red", "value": null },
+              { "color": "green", "value": 1 }
+            ]
+          }
+        }
+      }
+    },
+
+    {
+      "title": "Airflow Status",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 8, "x": 8, "y": 9 },
+      "targets": [
+        {
+          "expr": "up{job='airflow'}",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none"
+      }
+    },
+
+    {
+      "title": "Applications Spark Running",
+      "type": "stat",
+      "gridPos": { "h": 6, "w": 8, "x": 16, "y": 9 },
+      "targets": [
+        {
+          "expr": "metrics_master_apps_Value",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "colorMode": "background",
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "horizontal",
+        "textMode": "value"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "none",
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              { "color": "red", "value": null },
+              { "color": "green", "value": 1 }
+            ]
+          }
+        }
+      }
+    },      
+
+    {
+      "title": "SCRAPERS & STREAMING",
+      "type": "row",
+      "collapsed": false,
+      "gridPos": { "h": 1, "w": 24, "x": 0, "y": 15 }
+    },
+
+    {
+      "title": "CNN Scraper Status",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 4, "x": 0, "y": 16 },
+      "targets": [
+        {
+          "expr": "news_script_status{instance='cnn-streamer:8001'}",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "colorMode": "background"
+      }
+    },
+
+    {
+      "title": "CNN Articles",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 4, "x": 4, "y": 16 },
+      "targets": [
+        {
+          "expr": "news_articles_total{instance='cnn-streamer:8001'}",
+          "refId": "A"
+        }
+      ]
+    },
+
+    {
+      "title": "Bronze/Silver Job Status",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 4, "x": 8, "y": 16 },
+      "targets": [
+        {
+          "expr": "news_script_status{instance='spark-streaming-job:8002'}",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "colorMode": "background"
+      }
+    },
+
+    {
+      "title": "Articles Bronze",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 4, "x": 12, "y": 16 },
+      "targets": [
+        {
+          "expr": "news_articles_bronze_total{instance='spark-streaming-job:8002'}",
+          "refId": "A"
+        }
+      ]
+    },
+
+    {
+      "title": "Articles Silver",
+      "type": "stat",
+      "gridPos": { "h": 5, "w": 4, "x": 16, "y": 16 },
+      "targets": [
+        {
+          "expr": "news_articles_silver_total{instance='spark-streaming-job:8002'}",
+          "refId": "A"
+        }
+      ]
+    },
+
+    {
+      "title": "Articles / Minute",
+      "type": "timeseries",
+      "gridPos": { "h": 5, "w": 4, "x": 20, "y": 16 },
+      "targets": [
+        {
+          "expr": "rate(news_articles_total[1m]) * 60",
+          "refId": "A"
+        }
+      ]
+    },
+
+    {
+      "title": "RÉPARTITION DES CATÉGORIES",
+      "type": "piechart",
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 21 },
+      "targets": [
+        {
+          "expr": "sum by(category)(news_articles_by_category)",
+          "refId": "A"
+        }
+      ]
+    },
+
+    {
+      "title": "ÉVOLUTION DES ARTICLES",
+      "type": "timeseries",
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 21 },
+      "targets": [
+        {
+          "expr": "increase(news_articles_total[5m])",
+          "refId": "A"
+        }
+      ],
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        }
+      }
+    }
+
+  ]
+}

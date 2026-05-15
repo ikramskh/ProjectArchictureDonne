@@ -1,0 +1,7 @@
+kafka-python
+requests
+beautifulsoup4
+lxml
+pyspark==3.5.1
+prometheus_client
+apache-airflow-providers-apache-spark==4.8.1
