@@ -1,0 +1,35 @@
+[2026-05-19T13:00:01.641+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T13:00:01.871+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T12:00:00+00:00 [queued]>
+[2026-05-19T13:00:01.947+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T12:00:00+00:00 [queued]>
+[2026-05-19T13:00:01.950+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T13:00:02.012+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-19 12:00:00+00:00
+[2026-05-19T13:00:02.034+0000] {standard_task_runner.py:63} INFO - Started process 13226 to run task
+[2026-05-19T13:00:02.048+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'scheduled__2026-05-19T12:00:00+00:00', '--job-id', '318', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmp1ocv4opu']
+[2026-05-19T13:00:02.056+0000] {standard_task_runner.py:91} INFO - Job 318: Subtask run_aljazeera_scraper
+[2026-05-19T13:00:02.680+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T12:00:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T13:00:03.646+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T12:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T12:00:00+00:00'
+[2026-05-19T13:00:03.649+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T13:00:03.706+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T13:00:03.713+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-19T13:00:03.749+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T13:00:10.191+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-19T13:00:10.193+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-19T13:00:10.195+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/suspected-car-bomb-explodes-in-syrian-capital-damascus
+[2026-05-19T13:00:10.196+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Suspected car bomb explodes in Syrian capital Damascus...
+[2026-05-19T13:00:10.197+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/opinions/2026/5/19/china-russia-relations-are-as-strong-as-ever-thanks-to-trump
+[2026-05-19T13:00:10.198+0000] {subprocess.py:93} INFO - Envoyé à Kafka : China-Russia relations are as strong as ever thanks to Trump...
+[2026-05-19T13:00:10.199+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/son-of-palestinian-president-elected-to-fatahs-top-leadership-body
+[2026-05-19T13:00:10.201+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Son of Palestinian president elected to Fatah’s top leadersh...
+[2026-05-19T13:00:10.203+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/israeli-far-right-minister-smotrich-says-icc-seeks-his-arrest
+[2026-05-19T13:00:10.204+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Israeli far-right minister Smotrich says ICC seeks his arres...
+[2026-05-19T13:00:10.205+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/xi-jinping-seeks-to-strengthen-ties-with-putin-during-china-visit
+[2026-05-19T13:00:10.206+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Xi Jinping seeks to strengthen ties with Putin during China ...
+[2026-05-19T13:00:10.207+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/trump-says-iran-attack-on-hold-what-we-know-about-latest-negotiations
+[2026-05-19T13:00:10.208+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Trump says Iran attack on ‘hold’: What we know about latest ...
+[2026-05-19T13:00:10.209+0000] {subprocess.py:93} INFO - 6 nouveaux articles sauvegardés.
+[2026-05-19T13:00:10.359+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T13:00:10.361+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T13:00:11.033+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=scheduled__2026-05-19T12:00:00+00:00, execution_date=20260519T120000, start_date=20260519T130001, end_date=20260519T130011
+[2026-05-19T13:00:11.145+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T13:00:11.261+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T13:00:11.284+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

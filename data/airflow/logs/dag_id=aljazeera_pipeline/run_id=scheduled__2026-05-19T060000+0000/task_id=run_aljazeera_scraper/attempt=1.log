@@ -1,0 +1,49 @@
+[2026-05-19T07:03:11.338+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T07:03:11.542+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T06:00:00+00:00 [queued]>
+[2026-05-19T07:03:11.600+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T06:00:00+00:00 [queued]>
+[2026-05-19T07:03:11.604+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T07:03:11.658+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-19 06:00:00+00:00
+[2026-05-19T07:03:11.665+0000] {standard_task_runner.py:63} INFO - Started process 4182 to run task
+[2026-05-19T07:03:11.669+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'scheduled__2026-05-19T06:00:00+00:00', '--job-id', '288', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmpiea1etz4']
+[2026-05-19T07:03:11.674+0000] {standard_task_runner.py:91} INFO - Job 288: Subtask run_aljazeera_scraper
+[2026-05-19T07:03:12.082+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T06:00:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T07:03:12.687+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T06:00:00+00:00'
+[2026-05-19T07:03:12.688+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T07:03:12.720+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T07:03:12.721+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-19T07:03:12.737+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T09:52:33.631+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-19T09:52:33.667+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-19T09:52:33.695+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/wembanyama-scores-41-as-spurs-upset-thunder-in-game-1-thriller
+[2026-05-19T09:52:33.709+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Wembanyama scores 41 as Spurs upset Thunder in Game 1 thrill...
+[2026-05-19T09:52:33.758+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/bolivian-miners-clash-with-police-demanding-president-resign
+[2026-05-19T09:52:33.783+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Bolivian miners clash with police demanding president resign...
+[2026-05-19T09:52:33.801+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/aje-onl-nf_helicopters-douse-flames-in-california-190526
+[2026-05-19T09:52:33.822+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Helicopters douse flames threatening hillside homes in Calif...
+[2026-05-19T09:52:33.856+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/how-philadelphias-democratic-primary-tests-the-bounds-of-us-progressivism
+[2026-05-19T09:52:33.885+0000] {subprocess.py:93} INFO - Envoyé à Kafka : How Philadelphia’s Democratic primary tests the bounds of US...
+[2026-05-19T09:52:33.901+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/trumps-repeated-ultimatums-betray-his-lack-of-leverage-over-iran
+[2026-05-19T09:52:33.929+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Trump’s repeated ultimatums betray his lack of leverage over...
+[2026-05-19T09:52:33.956+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/aje-onl-nf_clip-who-responds-to-ebola-outbreak-in-drc-180526
+[2026-05-19T09:52:33.962+0000] {subprocess.py:93} INFO - Envoyé à Kafka : WHO responding to ‘complex, difficult’ Ebola outbreak in DR ...
+[2026-05-19T09:52:33.969+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/russia-china-ties-stabilising-force-in-world-putin-says-before-xi-talks
+[2026-05-19T09:52:33.993+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Russia-China ties ‘stabilising’ force in world, Putin says b...
+[2026-05-19T09:52:33.997+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/two-teen-gunmen-kill-three-at-san-diego-mosque-in-suspected-hate-crime
+[2026-05-19T09:52:34.002+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Two teen gunmen kill three at San Diego mosque in suspected ...
+[2026-05-19T09:52:34.028+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/liveblog/2026/5/19/iran-war-live-trump-says-iran-attack-postponed-at-request-of-gulf-allies
+[2026-05-19T09:52:34.033+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Iran war live: Trump says Iran attack postponed at request o...
+[2026-05-19T09:52:34.035+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/18/us-suspends-joint-defence-effort-with-canada-dating-back-to-world-war-ii
+[2026-05-19T09:52:34.058+0000] {subprocess.py:93} INFO - Erreur scraping https://www.aljazeera.com/news/2026/5/18/us-suspends-joint-defence-effort-with-canada-dating-back-to-world-war-ii: HTTPSConnectionPool(host='www.aljazeera.com', port=443): Max retries exceeded with url: /news/2026/5/18/us-suspends-joint-defence-effort-with-canada-dating-back-to-world-war-ii (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ea05523c590>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2026-05-19T09:52:34.065+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/18/a-packed-race-for-governor-what-to-know-about-oregons-primary-elections
+[2026-05-19T09:52:34.090+0000] {subprocess.py:93} INFO - Erreur scraping https://www.aljazeera.com/news/2026/5/18/a-packed-race-for-governor-what-to-know-about-oregons-primary-elections: HTTPSConnectionPool(host='www.aljazeera.com', port=443): Max retries exceeded with url: /news/2026/5/18/a-packed-race-for-governor-what-to-know-about-oregons-primary-elections (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ea0550fba50>: Failed to resolve 'www.aljazeera.com' ([Errno -2] Name or service not known)"))
+[2026-05-19T09:52:34.101+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/18/brazil-call-up-neymar-to-world-cup-2026-squad
+[2026-05-19T09:52:34.125+0000] {subprocess.py:93} INFO - Erreur scraping https://www.aljazeera.com/sports/2026/5/18/brazil-call-up-neymar-to-world-cup-2026-squad: HTTPSConnectionPool(host='www.aljazeera.com', port=443): Max retries exceeded with url: /sports/2026/5/18/brazil-call-up-neymar-to-world-cup-2026-squad (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ea054f37fd0>: Failed to resolve 'www.aljazeera.com' ([Errno -2] Name or service not known)"))
+[2026-05-19T09:52:34.128+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/18/a-redistricting-re-do-what-to-know-about-alabamas-primary-elections
+[2026-05-19T09:52:34.154+0000] {subprocess.py:93} INFO - Erreur scraping https://www.aljazeera.com/news/2026/5/18/a-redistricting-re-do-what-to-know-about-alabamas-primary-elections: HTTPSConnectionPool(host='www.aljazeera.com', port=443): Max retries exceeded with url: /news/2026/5/18/a-redistricting-re-do-what-to-know-about-alabamas-primary-elections (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7ea0551113d0>: Failed to resolve 'www.aljazeera.com' ([Errno -2] Name or service not known)"))
+[2026-05-19T09:52:34.159+0000] {subprocess.py:93} INFO - 9 nouveaux articles sauvegardés.
+[2026-05-19T09:52:34.161+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T09:52:34.190+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T09:52:36.860+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=scheduled__2026-05-19T06:00:00+00:00, execution_date=20260519T060000, start_date=20260519T070311, end_date=20260519T095236
+[2026-05-19T09:52:37.116+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T09:52:37.385+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T09:52:37.436+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

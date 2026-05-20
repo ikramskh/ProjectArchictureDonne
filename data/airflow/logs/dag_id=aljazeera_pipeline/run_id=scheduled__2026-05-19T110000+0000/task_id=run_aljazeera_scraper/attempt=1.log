@@ -1,0 +1,35 @@
+[2026-05-19T12:00:03.597+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T12:00:03.872+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T11:00:00+00:00 [queued]>
+[2026-05-19T12:00:03.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T11:00:00+00:00 [queued]>
+[2026-05-19T12:00:03.969+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T12:00:04.096+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-19 11:00:00+00:00
+[2026-05-19T12:00:04.109+0000] {standard_task_runner.py:63} INFO - Started process 8535 to run task
+[2026-05-19T12:00:04.114+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'scheduled__2026-05-19T11:00:00+00:00', '--job-id', '304', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmpdnyiizly']
+[2026-05-19T12:00:04.118+0000] {standard_task_runner.py:91} INFO - Job 304: Subtask run_aljazeera_scraper
+[2026-05-19T12:00:04.581+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T11:00:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T12:00:05.406+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T11:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T11:00:00+00:00'
+[2026-05-19T12:00:05.410+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T12:00:05.442+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T12:00:05.447+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-19T12:00:05.470+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T12:00:09.938+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-19T12:00:09.939+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-19T12:00:09.941+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/thailand-to-slash-tourist-visa-free-stays
+[2026-05-19T12:00:09.946+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Thailand to slash tourist visa-free stays...
+[2026-05-19T12:00:09.949+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/gaza-aid-flotilla-organisers-say-41-boats-intercepted-10-still-sailing
+[2026-05-19T12:00:09.953+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Gaza aid flotilla organisers say 41 boats intercepted, 10 st...
+[2026-05-19T12:00:09.955+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/musk-vs-altman-what-to-know-about-the-openai-verdict
+[2026-05-19T12:00:09.957+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Musk vs Altman: What to know about the OpenAI verdict...
+[2026-05-19T12:00:09.959+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/spains-former-pm-zapatero-faces-corruption-probe
+[2026-05-19T12:00:09.961+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Spain’s former PM Zapatero faces corruption probe...
+[2026-05-19T12:00:09.963+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/who-to-hold-emergency-committee-meeting-as-ebola-death-toll-rises-to-131
+[2026-05-19T12:00:09.965+0000] {subprocess.py:93} INFO - Envoyé à Kafka : WHO to hold emergency committee meeting as Ebola death toll ...
+[2026-05-19T12:00:09.966+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/iran-squad-in-race-against-time-for-world-cup-readiness-amid-us-israel-war
+[2026-05-19T12:00:09.968+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Iran squad in race against time for World Cup readiness amid...
+[2026-05-19T12:00:09.969+0000] {subprocess.py:93} INFO - 6 nouveaux articles sauvegardés.
+[2026-05-19T12:00:10.112+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T12:00:10.116+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T12:00:11.527+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=scheduled__2026-05-19T11:00:00+00:00, execution_date=20260519T110000, start_date=20260519T120003, end_date=20260519T120011
+[2026-05-19T12:00:11.627+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T12:00:11.724+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T12:00:11.745+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

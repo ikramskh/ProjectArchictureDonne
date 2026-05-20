@@ -1,0 +1,74 @@
+[2026-05-19T10:40:01.683+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T10:40:01.832+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: medallion_gold_layer.gold_processing scheduled__2026-05-19T10:35:00+00:00 [queued]>
+[2026-05-19T10:40:01.852+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: medallion_gold_layer.gold_processing scheduled__2026-05-19T10:35:00+00:00 [queued]>
+[2026-05-19T10:40:01.855+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T10:40:01.907+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): gold_processing> on 2026-05-19 10:35:00+00:00
+[2026-05-19T10:40:01.926+0000] {standard_task_runner.py:63} INFO - Started process 7898 to run task
+[2026-05-19T10:40:01.936+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'medallion_gold_layer', 'gold_processing', 'scheduled__2026-05-19T10:35:00+00:00', '--job-id', '301', '--raw', '--subdir', 'DAGS_FOLDER/gold_layer_dag.py', '--cfg-path', '/tmp/tmp75qiegf2']
+[2026-05-19T10:40:01.945+0000] {standard_task_runner.py:91} INFO - Job 301: Subtask gold_processing
+[2026-05-19T10:40:02.422+0000] {task_command.py:426} INFO - Running <TaskInstance: medallion_gold_layer.gold_processing scheduled__2026-05-19T10:35:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T10:40:03.049+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='medallion_gold_layer' AIRFLOW_CTX_TASK_ID='gold_processing' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T10:35:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T10:35:00+00:00'
+[2026-05-19T10:40:03.050+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T10:40:03.074+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T10:40:03.077+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    spark-submit     --master spark://spark-master:7077     --executor-memory 512M     --executor-cores 1     --total-executor-cores 1     --jars /opt/airflow/jars/aws-java-sdk-bundle-1.12.262.jar,/opt/airflow/jars/hadoop-aws-3.3.4.jar,/opt/airflow/jars/postgresql-42.7.3.jar     /opt/spark_jobs/gold_processor.py\n    ']
+[2026-05-19T10:40:03.098+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T10:40:06.065+0000] {subprocess.py:93} INFO - 26/05/19 10:40:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2026-05-19T10:40:07.854+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO SparkContext: Running Spark version 3.5.1
+[2026-05-19T10:40:07.855+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO SparkContext: OS info Linux, 6.6.87.2-microsoft-standard-WSL2, amd64
+[2026-05-19T10:40:07.856+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO SparkContext: Java version 17.0.19
+[2026-05-19T10:40:07.928+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO ResourceUtils: ==============================================================
+[2026-05-19T10:40:07.930+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2026-05-19T10:40:07.933+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO ResourceUtils: ==============================================================
+[2026-05-19T10:40:07.935+0000] {subprocess.py:93} INFO - 26/05/19 10:40:07 INFO SparkContext: Submitted application: GoldLayerProcessor
+[2026-05-19T10:40:08.010+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 512, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2026-05-19T10:40:08.045+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO ResourceProfile: Limiting resource is cpus at 1 tasks per executor
+[2026-05-19T10:40:08.055+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2026-05-19T10:40:08.225+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SecurityManager: Changing view acls to: airflow
+[2026-05-19T10:40:08.226+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SecurityManager: Changing modify acls to: airflow
+[2026-05-19T10:40:08.227+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SecurityManager: Changing view acls groups to:
+[2026-05-19T10:40:08.228+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SecurityManager: Changing modify acls groups to:
+[2026-05-19T10:40:08.229+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: airflow; groups with view permissions: EMPTY; users with modify permissions: airflow; groups with modify permissions: EMPTY
+[2026-05-19T10:40:08.809+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO Utils: Successfully started service 'sparkDriver' on port 33049.
+[2026-05-19T10:40:08.890+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SparkEnv: Registering MapOutputTracker
+[2026-05-19T10:40:08.981+0000] {subprocess.py:93} INFO - 26/05/19 10:40:08 INFO SparkEnv: Registering BlockManagerMaster
+[2026-05-19T10:40:09.027+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2026-05-19T10:40:09.029+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2026-05-19T10:40:09.039+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2026-05-19T10:40:09.079+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-4bab7317-b11d-47a8-b02c-222b3f423ac3
+[2026-05-19T10:40:09.106+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2026-05-19T10:40:09.130+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO SparkEnv: Registering OutputCommitCoordinator
+[2026-05-19T10:40:09.294+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2026-05-19T10:40:09.395+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2026-05-19T10:40:09.463+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO SparkContext: Added JAR file:///opt/airflow/jars/aws-java-sdk-bundle-1.12.262.jar at spark://c43074c3fd7c:33049/jars/aws-java-sdk-bundle-1.12.262.jar with timestamp 1779187207839
+[2026-05-19T10:40:09.465+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO SparkContext: Added JAR file:///opt/airflow/jars/hadoop-aws-3.3.4.jar at spark://c43074c3fd7c:33049/jars/hadoop-aws-3.3.4.jar with timestamp 1779187207839
+[2026-05-19T10:40:09.466+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO SparkContext: Added JAR file:///opt/airflow/jars/postgresql-42.7.3.jar at spark://c43074c3fd7c:33049/jars/postgresql-42.7.3.jar with timestamp 1779187207839
+[2026-05-19T10:40:09.594+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark-master:7077...
+[2026-05-19T10:40:09.662+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO TransportClientFactory: Successfully created connection to spark-master/172.18.0.4:7077 after 37 ms (0 ms spent in bootstraps)
+[2026-05-19T10:40:09.817+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20260519104009-0030
+[2026-05-19T10:40:09.824+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20260519104009-0030/0 on worker-20260518211503-172.18.0.3-40747 (172.18.0.3:40747) with 1 core(s)
+[2026-05-19T10:40:09.831+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO StandaloneSchedulerBackend: Granted executor ID app-20260519104009-0030/0 on hostPort 172.18.0.3:40747 with 1 core(s), 512.0 MiB RAM
+[2026-05-19T10:40:09.847+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 34099.
+[2026-05-19T10:40:09.849+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO NettyBlockTransferService: Server created on c43074c3fd7c:34099
+[2026-05-19T10:40:09.853+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2026-05-19T10:40:09.869+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, c43074c3fd7c, 34099, None)
+[2026-05-19T10:40:09.880+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManagerMasterEndpoint: Registering block manager c43074c3fd7c:34099 with 434.4 MiB RAM, BlockManagerId(driver, c43074c3fd7c, 34099, None)
+[2026-05-19T10:40:09.887+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, c43074c3fd7c, 34099, None)
+[2026-05-19T10:40:09.889+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, c43074c3fd7c, 34099, None)
+[2026-05-19T10:40:09.904+0000] {subprocess.py:93} INFO - 26/05/19 10:40:09 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20260519104009-0030/0 is now RUNNING
+[2026-05-19T10:40:10.218+0000] {subprocess.py:93} INFO - 26/05/19 10:40:10 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2026-05-19T10:40:12.211+0000] {subprocess.py:93} INFO - 26/05/19 10:40:12 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-s3a-file-system.properties,hadoop-metrics2.properties
+[2026-05-19T10:40:28.851+0000] {subprocess.py:93} INFO - Lecture SILVER terminée
+[2026-05-19T10:41:08.575+0000] {subprocess.py:93} INFO - Table articles_par_jour créée
+[2026-05-19T10:41:40.444+0000] {subprocess.py:93} INFO - Table articles_par_source créée
+[2026-05-19T10:42:10.184+0000] {subprocess.py:93} INFO - Table top_categories créée
+[2026-05-19T11:37:52.536+0000] {subprocess.py:93} INFO - Table articles_par_source_jour créée
+[2026-05-19T11:37:52.537+0000] {subprocess.py:93} INFO - 
+[2026-05-19T11:37:52.540+0000] {subprocess.py:93} INFO - ==============================
+[2026-05-19T11:37:52.543+0000] {subprocess.py:93} INFO - GOLD LAYER TERMINÉ
+[2026-05-19T11:37:52.545+0000] {subprocess.py:93} INFO - ==============================
+[2026-05-19T11:37:53.116+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T11:37:53.120+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T11:37:53.631+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=medallion_gold_layer, task_id=gold_processing, run_id=scheduled__2026-05-19T10:35:00+00:00, execution_date=20260519T103500, start_date=20260519T104001, end_date=20260519T113753
+[2026-05-19T11:37:53.736+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T11:37:53.945+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T11:37:53.950+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,49 @@
+[2026-05-19T15:47:29.690+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T15:47:30.396+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T14:00:00+00:00 [queued]>
+[2026-05-19T15:47:30.439+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T14:00:00+00:00 [queued]>
+[2026-05-19T15:47:30.445+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T15:47:30.582+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-19 14:00:00+00:00
+[2026-05-19T15:47:30.619+0000] {standard_task_runner.py:63} INFO - Started process 16590 to run task
+[2026-05-19T15:47:30.630+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'scheduled__2026-05-19T14:00:00+00:00', '--job-id', '328', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmpdgnq6y82']
+[2026-05-19T15:47:30.638+0000] {standard_task_runner.py:91} INFO - Job 328: Subtask run_aljazeera_scraper
+[2026-05-19T15:47:31.754+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T14:00:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T15:47:33.463+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T14:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T14:00:00+00:00'
+[2026-05-19T15:47:33.466+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T15:47:33.552+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T15:47:33.558+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-19T15:47:33.597+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T15:47:49.025+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-19T15:47:49.045+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-19T15:47:49.047+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/death-sentence-handed-to-man-for-killing-tiktok-star-sana-yousaf
+[2026-05-19T15:47:49.050+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Pakistan sentences man to death for killing TikTok star Sana...
+[2026-05-19T15:47:49.055+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/security-guards-face-probe-after-last-weeks-philippine-senate-shooting
+[2026-05-19T15:47:49.058+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Security guards face probe after last week’s Philippine Sena...
+[2026-05-19T15:47:49.061+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/qatar-says-us-iran-negotiations-need-more
+[2026-05-19T15:47:49.063+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Qatar says US-Iran negotiations need ‘more time’...
+[2026-05-19T15:47:49.066+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/at-least-one-killed-21-wounded-in-car-bomb-explosion-in-syrias-damascus
+[2026-05-19T15:47:49.069+0000] {subprocess.py:93} INFO - Envoyé à Kafka : At least one killed, 21 wounded in car bomb explosion in Syr...
+[2026-05-19T15:47:49.072+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/liveblog/2026/5/19/live-bournemouth-vs-manchester-city-premier-league
+[2026-05-19T15:47:49.075+0000] {subprocess.py:93} INFO - Envoyé à Kafka : LIVE: Bournemouth vs Man City – Premier League...
+[2026-05-19T15:47:49.077+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/fifa-world-cup-2026-all-to-know-about-neymar-surprise-brazil-selection-ancelotti
+[2026-05-19T15:47:49.079+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Neymar is going to the World Cup: Why did Brazil name him in...
+[2026-05-19T15:47:49.081+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/economy/2026/5/19/flight-to-argentina-how-significant-is-it-for-israels-latam-outreach
+[2026-05-19T15:47:49.083+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Flight to Argentina: How significant is it for Israel’s LatA...
+[2026-05-19T15:47:49.094+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/doha-debates/2026/5/19/resistance-who-gets-to-decide
+[2026-05-19T15:47:49.097+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Resistance: who gets to decide?...
+[2026-05-19T15:47:49.101+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/why-has-fifa-not-signed-a-world-cup-broadcast-deal-in-india
+[2026-05-19T15:47:49.103+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Why has FIFA not signed a World Cup broadcast deal in India?...
+[2026-05-19T15:47:49.105+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/us-extends-sanctions-waiver-on-russian-oil-why-it-matters
+[2026-05-19T15:47:49.118+0000] {subprocess.py:93} INFO - Envoyé à Kafka : US extends sanctions waiver on Russian oil: Why it matters...
+[2026-05-19T15:47:49.119+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/podcasts/2026/5/19/the-take-whats-behind-the-forced-disappearances-in-ecuador
+[2026-05-19T15:47:49.120+0000] {subprocess.py:93} INFO - Envoyé à Kafka : The Take: What’s behind the forced disappearances in Ecuador...
+[2026-05-19T15:47:49.122+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/ronaldo-to-lead-portugal-at-sixth-world-cup-as-martinez-names-squad
+[2026-05-19T15:47:49.124+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Ronaldo to lead Portugal at sixth World Cup as Martinez name...
+[2026-05-19T15:47:49.127+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/who-was-amin-abdullah-the-hero-guard-killed-in-san-diego-shooting
+[2026-05-19T15:47:49.130+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Who was Amin Abdullah, the ‘hero’ guard killed in San Diego ...
+[2026-05-19T15:47:49.132+0000] {subprocess.py:93} INFO - 13 nouveaux articles sauvegardés.
+[2026-05-19T15:47:49.311+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T15:47:49.319+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T15:47:51.044+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=scheduled__2026-05-19T14:00:00+00:00, execution_date=20260519T140000, start_date=20260519T154730, end_date=20260519T154751
+[2026-05-19T15:47:51.206+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T15:47:51.445+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T15:47:51.490+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

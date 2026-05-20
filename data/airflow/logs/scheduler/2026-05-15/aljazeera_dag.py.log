@@ -2980,3 +2980,409 @@
 [2026-05-15T23:29:42.856+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:29:42.855+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-05-15T23:29:42.884+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:29:42.884+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
 [2026-05-15T23:29:42.941+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.161 seconds
+[2026-05-15T23:30:13.349+0000] {processor.py:161} INFO - Started process (PID=32369) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:13.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:30:13.354+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:13.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:13.399+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:13.529+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:13.529+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:30:13.653+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:13.653+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:30:13.754+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.416 seconds
+[2026-05-15T23:30:44.106+0000] {processor.py:161} INFO - Started process (PID=32441) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:44.108+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:30:44.113+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:44.112+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:44.155+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:30:44.260+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:44.260+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:30:44.318+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:30:44.318+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:30:44.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.299 seconds
+[2026-05-15T23:31:14.823+0000] {processor.py:161} INFO - Started process (PID=32548) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:14.829+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:31:14.840+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:14.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:14.930+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:15.105+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:15.104+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:31:15.257+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:15.256+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:31:15.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.608 seconds
+[2026-05-15T23:31:46.136+0000] {processor.py:161} INFO - Started process (PID=32558) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:46.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:31:46.143+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:46.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:46.232+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:31:46.361+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:46.360+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:31:46.436+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:31:46.436+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:31:46.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.474 seconds
+[2026-05-15T23:32:17.290+0000] {processor.py:161} INFO - Started process (PID=32568) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:17.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:32:17.296+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:17.296+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:17.373+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:17.543+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:17.542+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:32:17.629+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:17.628+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:32:17.760+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.480 seconds
+[2026-05-15T23:32:48.509+0000] {processor.py:161} INFO - Started process (PID=32578) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:48.512+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:32:48.519+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:48.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:48.595+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:32:48.837+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:48.836+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:32:48.987+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:32:48.987+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:32:49.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.653 seconds
+[2026-05-15T23:33:19.953+0000] {processor.py:161} INFO - Started process (PID=32588) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:19.958+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:33:19.971+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:19.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:20.106+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:20.286+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:20.286+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:33:20.395+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:20.394+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:33:20.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.666 seconds
+[2026-05-15T23:33:51.212+0000] {processor.py:161} INFO - Started process (PID=32598) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:51.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:33:51.219+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:51.219+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:51.282+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:33:51.444+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:51.443+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:33:51.557+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:33:51.556+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:33:51.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.557 seconds
+[2026-05-15T23:34:22.511+0000] {processor.py:161} INFO - Started process (PID=32608) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:22.515+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:34:22.522+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:22.521+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:22.610+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:22.817+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:22.815+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:34:22.918+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:22.918+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:34:23.069+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.583 seconds
+[2026-05-15T23:34:53.794+0000] {processor.py:161} INFO - Started process (PID=32618) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:53.797+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:34:53.805+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:53.804+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:53.929+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:34:54.064+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:54.064+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:34:54.117+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:34:54.116+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:34:54.237+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.459 seconds
+[2026-05-15T23:35:25.078+0000] {processor.py:161} INFO - Started process (PID=32788) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:25.080+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:35:25.088+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:25.087+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:25.150+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:25.285+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:25.284+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:35:25.577+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:25.577+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:35:25.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.647 seconds
+[2026-05-15T23:35:56.490+0000] {processor.py:161} INFO - Started process (PID=32831) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:56.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:35:56.520+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:56.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:56.658+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:35:56.978+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:56.977+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:35:57.085+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:35:57.085+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:35:57.217+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.781 seconds
+[2026-05-15T23:36:28.102+0000] {processor.py:161} INFO - Started process (PID=32893) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:28.117+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:36:28.128+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:28.126+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:28.239+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:28.512+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:28.511+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:36:28.657+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:28.656+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:36:28.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.751 seconds
+[2026-05-15T23:36:59.511+0000] {processor.py:161} INFO - Started process (PID=32977) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:59.514+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:36:59.517+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:59.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:59.583+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:36:59.703+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:59.703+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:36:59.767+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:36:59.767+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:36:59.878+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.380 seconds
+[2026-05-15T23:37:30.622+0000] {processor.py:161} INFO - Started process (PID=32987) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:37:30.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:37:30.639+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:37:30.636+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:37:30.726+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:37:30.885+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:37:30.884+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:37:30.947+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:37:30.947+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:37:31.024+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.433 seconds
+[2026-05-15T23:38:01.708+0000] {processor.py:161} INFO - Started process (PID=32997) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:01.711+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:38:01.717+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:01.716+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:01.818+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:01.973+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:01.971+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:38:02.064+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:02.064+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:38:02.278+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.594 seconds
+[2026-05-15T23:38:32.872+0000] {processor.py:161} INFO - Started process (PID=33007) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:32.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:38:32.880+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:32.879+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:33.020+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:38:33.232+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:33.231+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:38:33.350+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:38:33.349+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:38:33.478+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.621 seconds
+[2026-05-15T23:39:04.174+0000] {processor.py:161} INFO - Started process (PID=33017) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:04.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:39:04.182+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:04.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:04.233+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:04.332+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:04.332+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:39:04.410+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:04.410+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:39:04.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.397 seconds
+[2026-05-15T23:39:35.352+0000] {processor.py:161} INFO - Started process (PID=33027) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:35.356+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:39:35.363+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:35.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:35.457+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:39:35.687+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:35.686+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:39:35.835+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:39:35.834+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:39:36.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.680 seconds
+[2026-05-15T23:40:06.869+0000] {processor.py:161} INFO - Started process (PID=33097) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:06.877+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:40:06.882+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:06.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:06.947+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:07.080+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:07.080+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:40:07.153+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:07.153+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:40:07.254+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.409 seconds
+[2026-05-15T23:40:38.022+0000] {processor.py:161} INFO - Started process (PID=33228) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:38.027+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:40:38.040+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:38.038+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:38.163+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:40:38.461+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:38.461+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:40:38.647+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:40:38.646+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:40:38.792+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.797 seconds
+[2026-05-15T23:41:09.523+0000] {processor.py:161} INFO - Started process (PID=33264) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:09.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:41:09.539+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:09.536+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:09.640+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:09.818+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:09.818+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:41:09.923+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:09.923+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:41:10.060+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.573 seconds
+[2026-05-15T23:41:40.775+0000] {processor.py:161} INFO - Started process (PID=33385) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:40.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:41:40.783+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:40.782+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:40.873+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:41:41.070+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:41.069+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:41:41.188+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:41:41.187+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:41:41.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.568 seconds
+[2026-05-15T23:42:12.098+0000] {processor.py:161} INFO - Started process (PID=33395) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:12.103+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:42:12.116+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:12.113+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:12.212+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:12.338+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:12.338+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:42:12.444+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:12.444+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:42:12.628+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.551 seconds
+[2026-05-15T23:42:43.357+0000] {processor.py:161} INFO - Started process (PID=33405) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:43.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:42:43.363+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:43.363+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:43.450+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:42:43.724+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:43.723+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:42:43.825+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:42:43.825+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:42:43.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.590 seconds
+[2026-05-15T23:43:14.558+0000] {processor.py:161} INFO - Started process (PID=33415) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:14.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:43:14.564+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:14.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:14.630+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:14.715+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:14.715+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:43:14.767+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:14.767+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:43:14.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.316 seconds
+[2026-05-15T23:43:45.252+0000] {processor.py:161} INFO - Started process (PID=33425) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:45.255+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:43:45.261+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:45.260+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:45.327+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:43:45.466+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:45.465+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:43:45.529+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:43:45.528+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:43:45.686+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.447 seconds
+[2026-05-15T23:44:16.447+0000] {processor.py:161} INFO - Started process (PID=33435) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:16.449+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:44:16.454+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:16.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:16.510+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:16.619+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:16.618+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:44:16.688+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:16.688+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:44:16.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.366 seconds
+[2026-05-15T23:44:47.474+0000] {processor.py:161} INFO - Started process (PID=33445) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:47.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:44:47.486+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:47.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:47.561+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:44:47.697+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:47.696+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:44:47.765+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:44:47.764+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:44:47.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.452 seconds
+[2026-05-15T23:45:18.792+0000] {processor.py:161} INFO - Started process (PID=33616) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:18.795+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:45:18.801+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:18.800+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:18.851+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:18.988+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:18.988+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:45:19.281+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:19.280+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:45:19.467+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.685 seconds
+[2026-05-15T23:45:50.499+0000] {processor.py:161} INFO - Started process (PID=33658) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:50.507+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:45:50.514+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:50.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:50.652+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:45:50.900+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:50.898+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:45:51.026+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:45:51.025+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:45:51.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.734 seconds
+[2026-05-15T23:46:22.174+0000] {processor.py:161} INFO - Started process (PID=33706) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:22.180+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:46:22.197+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:22.196+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:22.318+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:22.541+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:22.541+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:46:22.655+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:22.655+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:46:22.767+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.637 seconds
+[2026-05-15T23:46:53.443+0000] {processor.py:161} INFO - Started process (PID=33755) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:53.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:46:53.455+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:53.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:53.525+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:46:53.671+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:53.671+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:46:53.757+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:46:53.757+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:46:53.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.463 seconds
+[2026-05-15T23:47:24.548+0000] {processor.py:161} INFO - Started process (PID=33765) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:24.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:47:24.555+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:24.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:24.627+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:24.927+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:24.926+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:47:25.031+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:25.030+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:47:25.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.650 seconds
+[2026-05-15T23:47:55.920+0000] {processor.py:161} INFO - Started process (PID=33775) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:55.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:47:55.927+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:55.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:55.988+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:47:56.100+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:56.100+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:47:56.164+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:47:56.164+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:47:56.312+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.406 seconds
+[2026-05-15T23:48:27.013+0000] {processor.py:161} INFO - Started process (PID=33785) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:27.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:48:27.020+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:27.020+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:27.086+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:27.270+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:27.269+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:48:27.383+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:27.383+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:48:27.524+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.531 seconds
+[2026-05-15T23:48:58.257+0000] {processor.py:161} INFO - Started process (PID=33795) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:58.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:48:58.266+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:58.265+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:58.345+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:48:58.473+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:58.472+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:48:58.545+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:48:58.544+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:48:58.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.396 seconds
+[2026-05-15T23:49:28.968+0000] {processor.py:161} INFO - Started process (PID=33805) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:49:28.971+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:49:28.975+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:49:28.974+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:49:29.054+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:49:29.407+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:49:29.406+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:49:29.554+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:49:29.553+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:49:29.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.754 seconds
+[2026-05-15T23:50:00.583+0000] {processor.py:161} INFO - Started process (PID=33815) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:00.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:50:00.594+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:00.593+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:00.671+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:00.817+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:00.817+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:50:00.906+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:00.905+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:50:01.018+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.452 seconds
+[2026-05-15T23:50:31.802+0000] {processor.py:161} INFO - Started process (PID=33993) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:31.811+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:50:31.829+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:31.827+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:31.960+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:50:32.172+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:32.172+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:50:32.580+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:50:32.579+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:50:32.850+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 1.077 seconds
+[2026-05-15T23:51:03.771+0000] {processor.py:161} INFO - Started process (PID=34015) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:03.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:51:03.791+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:03.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:03.867+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:04.079+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:04.078+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:51:04.183+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:04.182+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:51:04.330+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.584 seconds
+[2026-05-15T23:51:34.973+0000] {processor.py:161} INFO - Started process (PID=34171) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:34.976+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:51:34.981+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:34.980+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:35.039+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:51:35.169+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:35.169+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:51:35.286+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:51:35.285+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:51:35.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.466 seconds
+[2026-05-15T23:52:06.336+0000] {processor.py:161} INFO - Started process (PID=34181) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:06.340+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:52:06.347+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:06.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:06.411+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:07.831+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:07.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:52:07.909+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:07.907+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:52:08.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 1.740 seconds
+[2026-05-15T23:52:38.706+0000] {processor.py:161} INFO - Started process (PID=34191) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:38.708+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:52:38.714+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:38.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:38.783+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:52:38.900+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:38.900+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:52:39.014+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:52:39.010+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:52:39.162+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.465 seconds
+[2026-05-15T23:53:09.829+0000] {processor.py:161} INFO - Started process (PID=34201) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:09.835+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:53:09.842+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:09.841+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:09.920+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:10.103+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:10.103+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:53:10.204+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:10.203+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:53:10.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.558 seconds
+[2026-05-15T23:53:41.005+0000] {processor.py:161} INFO - Started process (PID=34211) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:41.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:53:41.009+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:41.009+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:41.052+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:53:41.185+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:41.182+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:53:41.245+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:53:41.244+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:53:41.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.307 seconds
+[2026-05-15T23:54:12.057+0000] {processor.py:161} INFO - Started process (PID=34221) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:12.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:54:12.066+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:12.065+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:12.134+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:12.374+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:12.373+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:54:12.478+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:12.477+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:54:12.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.540 seconds
+[2026-05-15T23:54:43.305+0000] {processor.py:161} INFO - Started process (PID=34231) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:43.308+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:54:43.314+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:43.313+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:43.378+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:54:43.478+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:43.477+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:54:43.539+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:54:43.539+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:54:43.620+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.325 seconds
+[2026-05-15T23:55:14.554+0000] {processor.py:161} INFO - Started process (PID=34380) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:14.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:55:14.568+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:14.567+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:14.670+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:14.896+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:14.895+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:55:15.069+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:15.068+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:55:15.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.717 seconds
+[2026-05-15T23:55:46.030+0000] {processor.py:161} INFO - Started process (PID=34428) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:46.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:55:46.043+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:46.042+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:46.175+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:55:46.426+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:46.425+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:55:46.550+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:55:46.550+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:55:46.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.713 seconds
+[2026-05-15T23:56:17.504+0000] {processor.py:161} INFO - Started process (PID=34470) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:17.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:56:17.514+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:17.512+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:17.622+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:17.893+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:17.892+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:56:18.096+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:18.094+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:56:18.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.760 seconds
+[2026-05-15T23:56:48.991+0000] {processor.py:161} INFO - Started process (PID=34560) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:49.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:56:49.017+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:49.015+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:49.140+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:56:49.394+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:49.393+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:56:49.555+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:56:49.553+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:56:49.719+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.777 seconds
+[2026-05-15T23:57:20.406+0000] {processor.py:161} INFO - Started process (PID=34616) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:20.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:57:20.419+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:20.418+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:20.496+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:20.655+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:20.654+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:57:20.729+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:20.729+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:57:20.859+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.476 seconds
+[2026-05-15T23:57:51.353+0000] {processor.py:161} INFO - Started process (PID=34626) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:51.353+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:57:51.355+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:51.355+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:51.374+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:57:51.420+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:51.420+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:57:51.449+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:57:51.449+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:57:51.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.154 seconds
+[2026-05-15T23:58:21.735+0000] {processor.py:161} INFO - Started process (PID=34636) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:21.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:58:21.739+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:21.738+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:21.760+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:21.808+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:21.808+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:58:21.833+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:21.832+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:58:21.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.159 seconds
+[2026-05-15T23:58:52.142+0000] {processor.py:161} INFO - Started process (PID=34646) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:52.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:58:52.145+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:52.145+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:52.170+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:58:52.221+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:52.220+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:58:52.251+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:58:52.250+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:58:52.301+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.163 seconds
+[2026-05-15T23:59:22.581+0000] {processor.py:161} INFO - Started process (PID=34656) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:22.583+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:59:22.585+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:22.585+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:22.620+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:22.700+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:22.700+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:59:22.754+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:22.754+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:59:22.830+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.256 seconds
+[2026-05-15T23:59:53.091+0000] {processor.py:161} INFO - Started process (PID=34666) to work on /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:53.092+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/aljazeera_dag.py for tasks to queue
+[2026-05-15T23:59:53.094+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:53.094+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:53.121+0000] {processor.py:840} INFO - DAG(s) 'aljazeera_pipeline' retrieved from /opt/airflow/dags/aljazeera_dag.py
+[2026-05-15T23:59:53.185+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:53.185+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-05-15T23:59:53.218+0000] {logging_mixin.py:188} INFO - [2026-05-15T23:59:53.218+0000] {dag.py:3954} INFO - Setting next_dagrun for aljazeera_pipeline to 2026-05-15 22:00:00+00:00, run_after=2026-05-15 23:00:00+00:00
+[2026-05-15T23:59:53.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/aljazeera_dag.py took 0.188 seconds

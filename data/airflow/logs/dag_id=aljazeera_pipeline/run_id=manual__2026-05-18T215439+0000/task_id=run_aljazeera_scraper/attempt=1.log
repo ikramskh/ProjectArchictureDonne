@@ -1,0 +1,23 @@
+[2026-05-18T21:54:42.140+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-18T21:54:42.323+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper manual__2026-05-18T21:54:39+00:00 [queued]>
+[2026-05-18T21:54:42.345+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper manual__2026-05-18T21:54:39+00:00 [queued]>
+[2026-05-18T21:54:42.347+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-18T21:54:42.408+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-18 21:54:39+00:00
+[2026-05-18T21:54:42.421+0000] {standard_task_runner.py:63} INFO - Started process 221 to run task
+[2026-05-18T21:54:42.427+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'manual__2026-05-18T21:54:39+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmpi63ts_y6']
+[2026-05-18T21:54:42.437+0000] {standard_task_runner.py:91} INFO - Job 272: Subtask run_aljazeera_scraper
+[2026-05-18T21:54:43.093+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper manual__2026-05-18T21:54:39+00:00 [running]> on host c43074c3fd7c
+[2026-05-18T21:54:43.766+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-18T21:54:39+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-18T21:54:39+00:00'
+[2026-05-18T21:54:43.769+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-18T21:54:43.882+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-18T21:54:43.886+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-18T21:54:43.911+0000] {subprocess.py:86} INFO - Output:
+[2026-05-18T21:54:47.176+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-18T21:54:47.178+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-18T21:54:47.179+0000] {subprocess.py:93} INFO - Aucun nouvel article depuis la dernière exécution.
+[2026-05-18T21:54:47.374+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-18T21:54:47.377+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-18T21:54:48.541+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=manual__2026-05-18T21:54:39+00:00, execution_date=20260518T215439, start_date=20260518T215442, end_date=20260518T215448
+[2026-05-18T21:54:48.709+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-18T21:54:48.838+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-18T21:54:48.850+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

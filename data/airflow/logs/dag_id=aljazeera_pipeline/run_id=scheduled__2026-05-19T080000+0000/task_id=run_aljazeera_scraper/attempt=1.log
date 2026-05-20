@@ -1,0 +1,53 @@
+[2026-05-19T09:52:38.555+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-05-19T09:52:38.672+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T08:00:00+00:00 [queued]>
+[2026-05-19T09:52:38.701+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T08:00:00+00:00 [queued]>
+[2026-05-19T09:52:38.704+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2026-05-19T09:52:38.771+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): run_aljazeera_scraper> on 2026-05-19 08:00:00+00:00
+[2026-05-19T09:52:38.793+0000] {standard_task_runner.py:63} INFO - Started process 4281 to run task
+[2026-05-19T09:52:38.796+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'aljazeera_pipeline', 'run_aljazeera_scraper', 'scheduled__2026-05-19T08:00:00+00:00', '--job-id', '290', '--raw', '--subdir', 'DAGS_FOLDER/aljazeera_dag.py', '--cfg-path', '/tmp/tmpira8hve7']
+[2026-05-19T09:52:38.798+0000] {standard_task_runner.py:91} INFO - Job 290: Subtask run_aljazeera_scraper
+[2026-05-19T09:52:39.166+0000] {task_command.py:426} INFO - Running <TaskInstance: aljazeera_pipeline.run_aljazeera_scraper scheduled__2026-05-19T08:00:00+00:00 [running]> on host c43074c3fd7c
+[2026-05-19T09:52:39.450+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ikram' AIRFLOW_CTX_DAG_ID='aljazeera_pipeline' AIRFLOW_CTX_TASK_ID='run_aljazeera_scraper' AIRFLOW_CTX_EXECUTION_DATE='2026-05-19T08:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-19T08:00:00+00:00'
+[2026-05-19T09:52:39.451+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-05-19T09:52:39.484+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-05-19T09:52:39.486+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/airflow/aljazeera.py']
+[2026-05-19T09:52:39.513+0000] {subprocess.py:86} INFO - Output:
+[2026-05-19T09:52:49.144+0000] {subprocess.py:93} INFO - Connexion Kafka réussie !
+[2026-05-19T09:52:49.148+0000] {subprocess.py:93} INFO - ===== Al Jazeera (Incremental Fetch) =====
+[2026-05-19T09:52:49.149+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/opinions/2026/5/19/the-us-israel-and-the-normalisation-of-scandal
+[2026-05-19T09:52:49.150+0000] {subprocess.py:93} INFO - Envoyé à Kafka : The US, Israel and the normalisation of scandal...
+[2026-05-19T09:52:49.151+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/khartoums-slow-recovery-amid-cautious-return
+[2026-05-19T09:52:49.152+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Khartoum’s slow recovery amid cautious return...
+[2026-05-19T09:52:49.152+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/economy/2026/5/19/starbucks-korea-ceo-fired-over-promotion-that-evoked-military-crackdown
+[2026-05-19T09:52:49.153+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Starbucks Korea CEO fired over promotion that evoked militar...
+[2026-05-19T09:52:49.153+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/features/2026/5/19/neutral-superpower-china-why-putin-visit-to-beijing-after-trump-matters
+[2026-05-19T09:52:49.154+0000] {subprocess.py:93} INFO - Envoyé à Kafka : ‘China holds the cards’: Why Putin’s visit to Beijing after ...
+[2026-05-19T09:52:49.154+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/video/newsfeed/2026/5/19/child-survivor-of-san-diego-mosque-shooting-describes-ordeal
+[2026-05-19T09:52:49.155+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Child survivor of San Diego mosque shooting describes ordeal...
+[2026-05-19T09:52:49.159+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/at-least-10-dead-as-huge-floods-sweep-southern-and-central-china
+[2026-05-19T09:52:49.172+0000] {subprocess.py:93} INFO - Envoyé à Kafka : At least 10 dead as huge floods sweep southern and central C...
+[2026-05-19T09:52:49.173+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/king-of-the-north-who-is-andy-burnham-a-potential-uk-prime-minister
+[2026-05-19T09:52:49.173+0000] {subprocess.py:93} INFO - Envoyé à Kafka : ‘King of the North’: Who is Andy Burnham, a potential UK pri...
+[2026-05-19T09:52:49.174+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/san-diego-mosque-shooting-what-we-know-about-the-victims-and-the-attackers
+[2026-05-19T09:52:49.175+0000] {subprocess.py:93} INFO - Envoyé à Kafka : San Diego mosque shooting: What we know about the victims an...
+[2026-05-19T09:52:49.176+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/gunmen-abduct-39-students-7-teachers-in-attacks-on-nigeria-schools
+[2026-05-19T09:52:49.177+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Gunmen abduct 39 students, 7 teachers in attacks on Nigeria ...
+[2026-05-19T09:52:49.177+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/features/2026/5/19/lebanon-and-syria-reshape-ties-amid-israeli-attacks-and-regional-shifts
+[2026-05-19T09:52:49.178+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Lebanon and Syria reshape ties amid Israeli attacks and regi...
+[2026-05-19T09:52:49.183+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/sports/2026/5/19/los-angeles-world-cup-stadium-workers-threaten-strike-over-ice-deployment
+[2026-05-19T09:52:49.187+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Los Angeles World Cup stadium workers threaten strike over I...
+[2026-05-19T09:52:49.190+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/palestine-weekly-wrap-jerusalem-day-nakba-surging-attacks
+[2026-05-19T09:52:49.191+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Palestine weekly wrap: Jerusalem Day, Nakba mark week of sur...
+[2026-05-19T09:52:49.192+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/russian-strike-damages-ukraine-danube-port-as-moscow-intercepts-drones
+[2026-05-19T09:52:49.195+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Russian strike damages Ukraine Danube port as Moscow interce...
+[2026-05-19T09:52:49.198+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/iran-war-day-81-trump-delays-attack-tehran-says-wont-surrender
+[2026-05-19T09:52:49.201+0000] {subprocess.py:93} INFO - Envoyé à Kafka : Iran war day 81: Trump delays attack; Tehran says won’t ‘sur...
+[2026-05-19T09:52:49.202+0000] {subprocess.py:93} INFO - Nouvel article détecté : https://www.aljazeera.com/news/2026/5/19/india-nordic-summit-why-is-modi-wooing-northern-europe
+[2026-05-19T09:52:49.203+0000] {subprocess.py:93} INFO - Envoyé à Kafka : India-Nordic summit: Why is Modi wooing Northern Europe?...
+[2026-05-19T09:52:49.204+0000] {subprocess.py:93} INFO - 15 nouveaux articles sauvegardés.
+[2026-05-19T09:52:49.358+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-05-19T09:52:49.359+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-05-19T09:52:50.110+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=aljazeera_pipeline, task_id=run_aljazeera_scraper, run_id=scheduled__2026-05-19T08:00:00+00:00, execution_date=20260519T080000, start_date=20260519T095238, end_date=20260519T095250
+[2026-05-19T09:52:50.202+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-05-19T09:52:50.264+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-19T09:52:50.272+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
